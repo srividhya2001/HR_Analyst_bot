@@ -39,9 +39,6 @@ Every generated SQL query is automatically restricted:
 
 WHERE division = '<manager_division>'
 
-yaml
-Copy code
-
 This guarantees each manager can only see their own division’s employee data, enforcing clear multi-tenant behavior without heavy infrastructure.
 
 ---
@@ -91,15 +88,8 @@ This prevents injection attacks and ensures consistent LLM behavior.
 ### 1. Backend
 uvicorn app.api.main:app --reload
 
-shell
-Copy code
-
 ### 2. Frontend
 streamlit run app/ui/app.py
-
-yaml
-Copy code
-
 ---
 
 ## Environment Variables
@@ -112,9 +102,6 @@ DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=your_password
 DB_NAME=hrdb
-
-yaml
-Copy code
 
 ---
 
