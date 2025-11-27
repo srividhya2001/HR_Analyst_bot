@@ -3,6 +3,7 @@
 A lightweight HR analytics chatbot that converts natural-language questions into secure SQL queries with strict validation and division-level tenant isolation. Built using FastAPI, Streamlit, PostgreSQL, and OpenAI.
 
 ---
+<img width="1550" height="720" alt="image" src="https://github.com/user-attachments/assets/a22d5751-3196-423f-9252-0b044e41a565" />
 
 ## Project Structure
 
