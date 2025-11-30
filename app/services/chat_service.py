@@ -33,7 +33,7 @@ def process_query(user_id: str, user_division: str, question: str):
     sql_filtered = apply_division_filter(sql, user_division)
     logger.info("Tenant-filtered SQL: %s", sql_filtered)
 
-    df = run_query(sql_filtered)
+    df = run_query(sql_filtered,division=user_division)
     records = df.to_dict(orient="records")
 
     answer = summarize_results(question, df)
