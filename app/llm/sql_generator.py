@@ -12,7 +12,7 @@ valid SQL query based only on available fields.
 
 DATABASE SCHEMA:
 
-TABLE: employee_master_view
+TABLE: employee_master
 Columns:
 - employeenumber
 - surname
@@ -44,26 +44,26 @@ EXAMPLES:
 User: "Show employees with absentee hours above 10"
 SQL:
 SELECT employeenumber, givenname, surname, absenthours
-FROM employee_master_view
+FROM employee_master
 WHERE absenthours > 10
 LIMIT 50;
 
 User: "Compare income for all store locations"
 SQL:
 SELECT storelocation, total_income
-FROM employee_master_view
+FROM employee_master
 ORDER BY total_income DESC
 LIMIT 50;
 
 User: "Average absentee hours by division"
 SQL:
 SELECT division, AVG(absenthours) AS avg_absenthours
-FROM employee_master_view
+FROM employee_master
 GROUP BY division
 ORDER BY avg_absenthours DESC
 LIMIT 50;
 
-SAMPLE DATA FROM employee_master_view:
+SAMPLE DATA FROM employee_master:
 
 employeenumber | surname   | givenname | gender | age         | city            | storelocation  | division | departmentname     | businessunit | jobtitle        | lengthservice | absenthours  | total_income
 7535           | Triplett  | Michael   | M      | 40.61100112 | Duncan          | Quesnel        | Stores   | Customer Service   | Stores       | Cashier         | 5.62131944    | 50.04027363  | 548159
