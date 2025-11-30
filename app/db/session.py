@@ -26,10 +26,11 @@ def get_engine():
 engine = get_engine()
 
 
-def run_query(sql: str) -> pd.DataFrame:
-    """
-    Execute a validated SQL query and return the result as a DataFrame.
-    """
+def run_query(sql: str, division: str) -> pd.DataFrame:
     with engine.connect() as connection:
+
+        connection.execute(text("SET app.division = :div"), {"div": division})
+
         df = pd.read_sql(text(sql), connection)
+
     return df
