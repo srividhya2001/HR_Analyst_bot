@@ -28,9 +28,10 @@ engine = get_engine()
 
 def run_query(sql: str, division: str) -> pd.DataFrame:
     with engine.connect() as connection:
-
-        connection.execute(text("SET app.division = :div"), {"div": division})
-
-        df = pd.read_sql(text(sql), connection)
+        if division == "All":
+            df = pd.read_sql(sql, connection)
+        else:
+            connection.execute(text("SET app.division = :div"), {"div": division})
+            df = pd.read_sql(text(sql), connection)
 
     return df

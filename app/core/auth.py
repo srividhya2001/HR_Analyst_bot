@@ -5,6 +5,7 @@ USER_DIVISION_MAP = {
     "manager_stores": "Stores",
     "manager_hr": "HumanResources",
     "manager_legal": "Legal",
+    "CEO":"All"
 }
 
 

@@ -1,18 +1,9 @@
-# --- API Framework ---
-fastapi==0.109.0
-uvicorn[standard]==0.27.0
-
-# --- Streamlit UI ---
-streamlit==1.32.0
-
-# --- Database + Drivers ---
-SQLAlchemy==2.0.29
-psycopg2-binary==2.9.9
-pandas==2.2.2
-
-# --- LLM Clients ---
-openai==1.14.2
-
-# --- Utilities ---
-python-dotenv==1.0.1
-pydantic==2.6.4
+fastapi
+uvicorn[standard]
+streamlit
+SQLAlchemy
+psycopg2-binary
+pandas
+openai
+python-dotenv
+pydantic

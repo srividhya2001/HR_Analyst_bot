@@ -10,7 +10,7 @@ class Settings:
     """
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     DB_USER = "postgres"
-    DB_PASSWORD = ""
+    DB_PASSWORD = "srividhya"
     DB_HOST = "localhost"
     DB_PORT = "5432"
     DB_NAME = "postgres"

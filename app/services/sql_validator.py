@@ -1,6 +1,6 @@
 import re
 
-ALLOWED_TABLES = {"employee_master_view"}
+ALLOWED_TABLES = {"employee_master"}
 
 DISALLOWED_KEYWORDS = [
     "INSERT", "UPDATE", "DELETE", "DROP", "ALTER",

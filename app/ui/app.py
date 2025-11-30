@@ -11,6 +11,7 @@ DIVISION_USERS = {
     "Stores": "manager_stores",
     "HR": "manager_hr",
     "Legal": "manager_legal",
+    "All": "CEO"
 }
 
 st.set_page_config(
